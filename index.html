@@ -211,9 +211,9 @@
         }
 
         footer img {
-            width: 20px; /* Ajusta el ancho según tus necesidades */
-            height: 20px; /* Ajusta el alto según tus necesidades */
-            margin: 0 5px; /* Ajusta el margen según tus necesidades */
+            width: 40px; /* img de pie de paginas */
+            height: 40px; 
+            margin: 0 0px; 
         }
 
         /* Estilos para el carrito */
@@ -344,19 +344,25 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <!-- Botón para realizar compra -->
-        <button class="button" onclick="realizarCompra()">Más sobre nosotros</button>
 
-        <!-- Enlace a Instagram -->
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?pid=ImgDet&rs=1" alt="Instagram">
-        </a>
+        <button class="button" onclick="redirigirAIndex()">Sobre nosotros</button>
+        <script>
+            function redirigirAIndex() {
+                window.location.href = "info.html";
+            }
+        </script>
 
-        <!-- Enlace a Facebook -->
-        <a href="https://www.facebook.com/" target="_blank">
-            <img src="https://th.bing.com/th/id/R.70ecfdd862bdc3fdbf5715085812f49e?rik=fDJPk4oWTEisvw&pid=ImgRaw&r=0" alt="Facebook">
-        </a>
-    </footer>
+
+    <!-- Enlace a Instagram -->
+    <a href="https://www.instagram.com/" target="_blank" style="margin-right: 10px;"> <!-- Agregado margen derecho -->
+        <img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?pid=ImgDet&rs=1" alt="Instagram">
+    </a>
+
+    <!-- Enlace a Facebook -->
+    <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://th.bing.com/th/id/R.70ecfdd862bdc3fdbf5715085812f49e?rik=fDJPk4oWTEisvw&pid=ImgRaw&r=0" alt="Facebook">
+    </a>
+</footer>
 
 </body>
 
