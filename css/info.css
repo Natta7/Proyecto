@@ -7,7 +7,7 @@ body {
 header { 
     position: relative; 
     width: 100vw; 
-    height: 20vh; /* Altura del 20% de la ventana */ 
+    height: 40vh; /* Altura del 20% de la ventana */ 
     overflow: hidden; 
     text-align: center; 
 } 
@@ -27,7 +27,7 @@ h2 {
 .portfolio-item { 
     border: 1px solid #ddd; /* Borde de img */ 
     overflow: hidden; /* Para que el borde abrace a la imagen y al texto */ 
-    margin-bottom: 50px; /* Añadido para espacio entre las imágenes */ 
+    margin-bottom: 100px; /* Añadido para espacio entre las imágenes */ 
 } 
 .portfolio-item img { /* Ajusta la img para que queden bien */ 
     max-width: 20%; /* Tamaño de la imagen */ 

@@ -16,7 +16,8 @@ header {
     position: relative;
 }
 .logo {
-    width: 100%;
+    width: 80%;
+    margin-bottom: 20px;
 }
 nav {
     position: absolute;
