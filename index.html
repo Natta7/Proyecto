@@ -15,7 +15,7 @@
                     <!-- Llamada al scriptPRODUCTO.js -->
                     <script src="js/scriptPRODUCTO.js"></script>       
         <!-- Logo de la Empresa -->
-        <img src="img/logobanner.png"
+        <img src="img/logobanner1.png"
             alt="Logo de la Empresa" class="logo">
         <!-- Sección de bienvenida -->
         <section id="bienvenida">
@@ -161,6 +161,31 @@
 </script>
 </section>
 
+</section>
+<script>
+    // Llamadas a la función crearProducto para cada producto
+    document.getElementById('productos').appendChild(
+        crearProducto('Collar Mujer', 'OFERTA', 280.00,
+            'img/joya1.png')
+    );
+
+    document.getElementById('productos').appendChild(
+        crearProducto('Collar Mujer', 'OFERTA', 299.00,
+            'img/joya2.png')
+    );
+
+    document.getElementById('productos').appendChild(
+        crearProducto('Piedra cuarzo', 'Piedra unisex', 400.00,
+            'img/joya3.png')
+    );
+
+    document.getElementById('productos').appendChild(
+        crearProducto('Pierdas', 'Piedras colores', 199.00,
+            'img/joya4.png')
+    );
+</script>
+</section>
+
     <!-- Llamada adicional al scriptINICIO.js -->
     <script src="js/scriptINICIO.js"></script>
 
@@ -186,5 +211,7 @@
             }
         </script>
     </footer>
+
+
 </body>
 </html>
