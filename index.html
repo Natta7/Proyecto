@@ -91,18 +91,25 @@
 
     <!-- PIE DE PÁGINA -->
     <footer>
-        <!-- Botón para realizar compra -->
-        <button class="button" onclick="realizarCompra()">Más sobre nosotros</button>
-
-        <!-- Enlace a Instagram -->
+        <!-- Botón para reml -->
+        <button class="button" onclick="redirigirAInfo()">Más sobre nosotros</button>
+    
+        <!-- Enlace a Instam -->
         <a href="https://www.instagram.com/" target="_blank">
-            <img src="https://th.bing.com/th/id/OIP.-ZirgQE5pr8e7htQWowJIgHaHa?pid=ImgDet&rs=1" alt="Instagram">
+            <img src="img/ista.png" alt="Instagram">
         </a>
-
-        <!-- Enlace a Facebook -->
+    
+        <!-- Enlace a Faceb -->
         <a href="https://www.facebook.com/" target="_blank">
-            <img src="https://th.bing.com/th/id/R.70ecfdd862bdc3fdbf5715085812f49e?rik=fDJPk4oWTEisvw&pid=ImgRaw&r=0" alt="Facebook">
+            <img src="img/fb.png" alt="Facebook">
         </a>
+    
+        <script>
+            function redirigirAInfo() {
+                // Cambia la ubicación de la ventana a info.html
+                window.location.href = "info.html";
+            }
+        </script>
     </footer>
 </body>
 </html>
