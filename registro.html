@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #registroForm {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinea los elementos en el centro */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        select {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+<body>
+
+    <section id="registroForm">
+        <h1>Registro</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <button type="button" onclick="guardarDatos()">Registrar</button>
+        </form>
+    </section>
+
+<script>
+    function guardarDatos() {
+        var nombre = document.getElementById('nombre').value;
+        var apellidos = document.getElementById('apellidos').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var genero = document.getElementById('genero').value;
+
+        // Verifica si ya hay usuarios en localStorage
+        var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+        // Agrega el nuevo usuario
+        usuarios.push({
+            nombre: nombre,
+            apellidos: apellidos,
+            email: email,
+            password: password,
+            genero: genero
+        });
+
+        // Guarda en localStorage
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        // Guarda también el último usuario registrado
+        localStorage.setItem('usuario', JSON.stringify({
+            nombre: nombre,
+            apellidos: apellidos,
+            email: email,
+            password: password,
+            genero: genero
+        }));
+
+        // Redirige a la página de inicio de sesión
+        window.location.href = "login.html";
+    }
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
