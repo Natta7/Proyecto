@@ -1,0 +1,31 @@
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f8f8f8; /* Fondo gris claro */ 
+    color: #333; /* txt */ 
+    margin: 0; 
+    padding: 0; 
+} 
+header { 
+    background-color: #3498db; /* Encabezado azul */ 
+    padding: 20px; 
+    text-align: center; 
+    color: white; 
+} 
+section { 
+    max-width: 800px; 
+    margin: 20px auto; 
+    text-align: center; 
+} 
+section h2 { 
+    color: #3498db; /* Color del tit */ 
+} 
+.contact-info { 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 20px; 
+} 
+.contact-info img { 
+    max-width: 60px; /* tamaño de lgooos */ 
+    height: auto; 
+    margin-bottom: 10px; 
+} 

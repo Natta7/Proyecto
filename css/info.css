@@ -1,0 +1,42 @@
+
+body { 
+    background-color: #f0f0f0; /* Color de fondo azul claro */ 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+} 
+header { 
+    position: relative; 
+    width: 100vw; 
+    height: 20vh; /* Altura del 20% de la ventana */ 
+    overflow: hidden; 
+    text-align: center; 
+} 
+.logo { 
+    width: 100%; 
+} 
+h2 { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin: 0; 
+    padding: 10px; 
+    background-color: rgba(128, 128, 128, 0.5); /* Gris con 50% de opacidad */ 
+    color: white; 
+} 
+.portfolio-item { 
+    border: 1px solid #ddd; /* Borde de img */ 
+    overflow: hidden; /* Para que el borde abrace a la imagen y al texto */ 
+    margin-bottom: 50px; /* Añadido para espacio entre las imágenes */ 
+} 
+.portfolio-item img { /* Ajusta la img para que queden bien */ 
+    max-width: 20%; /* Tamaño de la imagen */ 
+    height: auto; 
+    float: left; /* Para que el texto flote alrededor de la imagen */ 
+    margin-right: 20px; /* Añadido para espacio entre la imagen y el texto */ 
+} 
+.portfolio-item p { 
+    margin-top: 0; /* Eliminado el margen superior para que el texto comience justo al lado de la imagen */ 
+    font-size: 18px; /* Tamaño del texto */ 
+} 
+

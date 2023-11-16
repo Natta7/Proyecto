@@ -1,82 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Iniciar Sesión</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-
-        h1 {
-            text-align: center;
-            font-weight: bold;
-        }
-
-        #loginForm {
-            background-color: #fff;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Alinea los elementos en el centro */
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-
-        label {
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 16px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-
-        button {
-            padding: 12px;
-            border: none;
-            background-color: #3498db;
-            color: white;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #2980b9;
-        }
-
-        .logo {
-            width: 100px; /* Ajusta el tamaño de la imags */
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 
 <body>
-
     <section id="loginForm">
-        <img src="https://th.bing.com/th/id/R.452265957599dcd8c9c6d76ac2af422d?rik=P%2bysf6ee%2blgiDw&riu=http%3a%2f%2fd3ugyf2ht6aenh.cloudfront.net%2fstores%2f001%2f738%2f520%2fthemes%2fcommon%2flogo-1673939855-1623708243-452265957599dcd8c9c6d76ac2af422d1623708243.jpg%3f0&ehk=2PNYhKE4Fnyy0UUKkn4qYv7FDyY7IV9l%2f%2bDL9je%2f%2f5M%3d&risl=&pid=ImgRaw&r=0" alt="Logo" class="logo">
+        <img src="tu_imagen.jpg" alt="Logo" class="logo"> <!-- Las imagenes locales deben estar en la carppeta -->
         <h1>Iniciar Sesión</h1>
         <form>
             <label for="email">E-mail:</label>
@@ -90,6 +23,7 @@
     </section>
 
     <script>
+        /* Funcion para iniciar sesion */
 function iniciarSesion() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
@@ -116,6 +50,5 @@ function iniciarSesion() {
     }
 }
     </script>
-
 </body>
 </html>
