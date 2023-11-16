@@ -6,7 +6,7 @@ body {
     padding: 0; 
 } 
 header { 
-    background-color: #3498db; /* Encabezado azul */ 
+    background-color: transparent; /* Encabezado azul */ 
     padding: 20px; 
     text-align: center; 
     color: white; 
@@ -16,9 +16,7 @@ section {
     margin: 20px auto; 
     text-align: center; 
 } 
-section h2 { 
-    color: #3498db; /* Color del tit */ 
-} 
+
 .contact-info { 
     flex-direction: column; 
     align-items: center; 
@@ -29,3 +27,33 @@ section h2 {
     height: auto; 
     margin-bottom: 10px; 
 } 
+
+header { 
+    position: relative; 
+    width: 100vw; 
+    height: 30; /* Altura del 20% de la ventana */ 
+    overflow: hidden; 
+    text-align: center; 
+} 
+.logo { 
+    width: 100%; 
+} 
+
+.button {
+    background-color: #3498db;
+    border: none;
+    color: rgba(244, 244, 244, 0.986); 
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-bottom: 10px; /* Agregamos un pequeño margen al botón */
+    outline: none; /* Eliminamos el contorno de enfoque */
+}
+.button:hover {
+    background-color: #2980b9;
+}
